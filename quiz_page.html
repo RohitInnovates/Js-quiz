@@ -5,104 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Website</title>
+    <meta name="description" content="This is a Quiz Website.">
+    <meta name="keywords" content="quiz, JavaScript, HTML, CSS, TailWindCSS">
+    <meta name="author" content="Rohit Kumar">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="  ">
-    <div class="container  w-[900px] h-full relative my-[10%]  mx-auto rounded-md border-2">
-        <div class="quiz py-10 ">
-            <p class="font-mullish question font-bold text-xl mx-7">1.How can you handle asynchronous operations in
-                JavaScript?</p>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
+<body>
+    <div class="wrapper relative w-full ">
+        <h1 class="font-mullish font-bold text-white text-4xl text-center pt-[5%] cursor-pointer hover:text-black">
+            Please
+            Attempt Quiz </h1>
+        <div id="timer" class="font-mullish font-bold text-white text-4xl text-center pt-[2%] cursor-pointer">Time
+            Left: <span id="time">5:00</span></div>
 
-            <ul class="mx-7">
-                <li class="font-mullish mx-7 text-lg "><input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="op_1">Using callbacks</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="op_2">Using promises</label>
-                </li>
-                <li class="font-mullish mx-7 text-lg "><input type="radio" name="answer" class="answer" id="c">
-                    <label for="c" id="op_3">Using async/await</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="op_4">All of the above</label>
-                </li>
-            </ul>
-            <p class="font-mullish question font-bold text-xl mx-7">2.Which of the following is NOT a valid way to
-                declare a variable in
-                JavaScript?</p>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
 
-            <ul class="mx-7">
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="op_1">var</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="op_2">let</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="c">
-                    <label for="c" id="op_3">const</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="op_4">dim</label>
-                </li>
-            </ul>
-            <p class="font-mullish question font-bold text-xl mx-7">3.What does the map function do in JavaScript?</p>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
-            <ul>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="op_1">Iterates over each element in an array and returns a new array</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="op_2">Returns the first element that matches a condition</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="c">
-                    <label for="c" id="op_3">Adds a new element to an array</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="op_4">Removes elements from an array</label>
-                </li>
-            </ul>
-            <p class="font-mullish question font-bold text-xl mx-7">4.What is the purpose of the this keyword in
-                JavaScript?</p>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
-            <ul class="mx-7">
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="op_1">It refers to the current function</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="op_2">It refers to the current object</label>
-                </li>
-                <li class="mx-7 text-lg "><input type="radio" name="answer" class="answer" id="c">
-                    <label for="c" id="op_3">It refers to the parent object</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="op_4">It refers to the global object</label>
-                </li>
-            </ul>
-            <p class="font-mullish question font-bold text-xl mx-7">5.What does the === operator do in JavaScript?</p>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
-            <ul class="mx-7">
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="a">
-                    <label for="a" id="op_1">Checks for equality of value</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="b">
-                    <label for="b" id="op_2">"Checks for equaliy of value and type</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="c">
-                    <label for="c" id="op_3">It refers to the parentAssigns a value</label>
-                </li>
-                <li class="mx-7 text-lg font-mullish"><input type="radio" name="answer" class="answer" id="d">
-                    <label for="d" id="op_4">None of the above</label>
-                </li>
-            </ul>
-            <div class="my-2 h-[2px]  mx-7  bg-lightBlue"></div>
-            <div class="mx-8"><a href="/quiz_page.html"> <button class="btn-pink bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">Submit Quiz</button></a> </div>
+        <div class="container w-full md:max-w-screen-md  h-full relative flex justify-center items-center my-[3%]  mx-auto rounded-[50px] border-2 bg-white"
+            id="quiz-container">
+            <form id="quizForm">
+                <div class="quiz py-12 " id="questions">
+                    <p class="font-mullish question font-bold text-2xl mx-7">1.How can you handle asynchronous
+                        operations in
+                        JavaScript?</p>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+
+                    <ul class="mx-5 my-5">
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3 forced-colors:active: appearance-none border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question1" value="a" class="">Using callbacks <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question1" value="b">Using promises <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question1" value="c">Using async/await <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question1" value="d">All of the above <br>
+                        </li>
+                    </ul>
+                    <p class="font-mullish question font-bold text-2xl mx-7">2.Which of the following is NOT a valid way
+                        to
+                        declare a variable in
+                        JavaScript?</p>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+
+                    <ul class="mx-7">
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question2" value="1">var <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question2" value="2">let <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question2" value="3">const <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question2" value="4">dim <br>
+
+                        </li>
+                    </ul>
+                    <p class="font-mullish question font-bold text-2xl mx-7">3.What does the map function do in
+                        JavaScript?
+                    </p>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+                    <ul class="mx-7">
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question3" value="A">Iterates over each element in an array and
+                            returns a new
+                            array <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question3" value="B">Returns the first element that matches a
+                            condition <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question3" value="C">Adds a new element to an array <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question3" value="D">Removes elements from an array <br>
+
+                        </li>
+                    </ul>
+                    <p class="font-mullish question font-bold text-2xl mx-7">4.What is the purpose of the this keyword
+                        in
+                        JavaScript?</p>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+                    <ul class="mx-7">
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question4" value="11">It refers to the current function <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question4" value="12">It refers to the current object
+                            <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question4" value="13">It refers to the parent object
+                            <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question4" value="14">It refers to the global object <br>
+
+                        </li>
+                    </ul>
+                    <p class="font-mullish question font-bold text-2xl mx-7">5.What does the === operator do in
+                        JavaScript?
+                    </p>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+                    <ul class="mx-7">
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question5" value="1">Checks for equality of value
+                            <br>
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question5" value="2">Checks for equaliy of value and type <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question5" value="3">It refers to the parentAssigns a value <br>
+
+                        </li>
+                        <li
+                            class="w-fit font-mullish mx-7 px-5 text-xl py-3 my-3  border-2 border-gray-400 rounded-[25px]">
+                            <input type="radio" name="question5" value="4">None of the above <br>
+
+                        </li>
+                    </ul>
+                    <div class="my-4 h-[2px]  mx-7  bg-lightBlue"></div>
+                    <div class=" my-10 flex justify-center items-center"><button id="submitBtn" onclick="submitQuiz()"
+                            type="button" class="btn-pink bg-blue-500 mx-auto  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out">Submit
+                            Quiz</button></div>
+                </div>
+            </form>
+
         </div>
-
+        <footer>Copyright Rohit kumar | All Right Reserved</footer>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
+
+<!-- class=" bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ease-in-out" -->

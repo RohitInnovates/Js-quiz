@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <meta name="description" content="This is a Quiz Website.">
+    <meta name="keywords" content="quiz, JavaScript, HTML, CSS, TailWindCSS">
+    <meta name="author" content="Rohit Kumar">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper1">
+        <div class="container1">
+            <h1>Your Quiz Result</h1>
+            <div class="result" id="result"></div>
+            <div class="time" id="time"></div>
+            <div class="answer" id="answers">
+                <p id="question1"></p>
+                <p id="question2"></p>
+                <p id="question3"></p>
+                <p id="question4"></p>
+                <p id="question5"></p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script>
+        // Get score from URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const score = urlParams.get('score');
+        const timeLeft = urlParams.get('timeLeft');
+        const question1Answer = urlParams.get('question1');
+       const question2Answer = urlParams.get('question2');
+       const question3Answer = urlParams.get('question3');
+       const question4Answer = urlParams.get('question4');
+       const question5Answer = urlParams.get('question5');
+
+        // Display result
+        const resultDiv = document.getElementById('result');
+        resultDiv.textContent = 'Your score: ' + score;
+          const timeDiv = document.getElementById('time');
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timeDiv.textContent = `Time remaining: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            const answersDiv = document.getElementById('answers');
+                answersDiv.innerHTML = `
+      <p>Answer to Question 1: ${question1Answer}</p>
+      <p>Answer to Question 2: ${question2Answer}</p>
+       <p>Answer to Question 3: ${question3Answer}</p>
+        <p>Answer to Question 4: ${question4Answer}</p>
+         <p>Answer to Question 5: ${question4Answer}</p>
+    `;
+    </script>
+</body>
+
+</html>

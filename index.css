@@ -3,12 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-#wrapper{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.wrapper{
+    background: linear-gradient(to right, rgb(90, 164, 209),rgb(202, 136, 188));
 }
 .btn-pink{
     background-color: #e84949;
@@ -36,3 +32,76 @@ z-index: -1;
 .btn-pink:hover::before{
 transform: scaleX(1);
 }
+footer {
+  color: white;
+  display: flex;
+  padding: 12px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 640px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width: 90%;
+    }
+    #quizForm {
+     
+        align-items: center;
+    }
+
+    
+}
+   body {
+             background: linear-gradient(to right, rgb(90, 164, 209),rgb(202, 136, 188));
+        }
+
+        .wrapper1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+        }
+
+        .container1 {
+            width: 90%; 
+            max-width: 768px; 
+            border-bottom: 2px solid #e5e7eb; 
+            margin-top: 5rem; 
+            padding: 2rem;
+            background-color: #fff; 
+            border-radius: 1rem; 
+            box-shadow: 0 4px 6px rgba(129, 127, 127, 0.1);
+        }
+
+        h1{
+            font-weight: bold; 
+            font-size: 20rem; 
+            margin-bottom: 1rem; 
+            text-align: center; 
+        }
+
+        .result {
+            font-size: 1.25rem; 
+            font-weight: bold; 
+            margin-bottom: 1rem; 
+        }
+
+        .time {
+            font-size: 1rem; 
+            font-weight: bold; 
+            margin-bottom: 1rem; 
+        }
+
+        .answer {
+            font-size: 1rem; 
+        }
+
+        .answer p {
+            margin-bottom: 0.5rem; 
+        }
